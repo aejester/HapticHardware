@@ -1,3 +1,5 @@
+ARCHS = arm64 arm64e # So your tweak can target 64bit device from A7 to A13 devices
+
 include $(THEOS)/makefiles/common.mk
 
 BUNDLE_NAME = hapticprefs
