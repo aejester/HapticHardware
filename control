@@ -1,0 +1,9 @@
+Package: com.aejester.haptichardware
+Name: HapticHardware
+Depends: mobilesubstrate, ws.hbang.common
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: A tweak for making the physical buttons on your device play haptic feedback.
+Maintainer: Ryan Monaghan
+Author: Ryan Monaghan
+Section: Tweaks
