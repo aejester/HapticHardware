@@ -1,3 +1,5 @@
+ARCHS = arm64 arm64e # So your tweak can target 64bit device from A7 to A13 devices
+
 INSTALL_TARGET_PROCESSES = SpringBoard
 
 include $(THEOS)/makefiles/common.mk
