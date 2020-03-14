@@ -10,6 +10,8 @@ hapticprefs_FRAMEWORKS = UIKit
 hapticprefs_PRIVATE_FRAMEWORKS = Preferences
 hapticprefs_CFLAGS = -fobjc-arc
 
+hapticprefs_EXTRA_FRAMEWORKS = Cephei CepheiPrefs
+
 include $(THEOS_MAKE_PATH)/bundle.mk
 
 internal-stage::
