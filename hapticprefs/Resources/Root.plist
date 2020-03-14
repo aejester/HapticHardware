@@ -1,29 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>items</key>
-	<array>
-		<dict>
-			<key>cell</key>
-			<string>PSGroupCell</string>
-			<key>label</key>
-			<string>hapticprefs First Page</string>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSSwitchCell</string>
-			<key>default</key>
-			<true/>
-			<key>defaults</key>
-			<string>com.aejester.hapticprefs</string>
-			<key>key</key>
-			<string>AwesomeSwitch1</string>
-			<key>label</key>
-			<string>Awesome Switch 1</string>
-		</dict>
-	</array>
-	<key>title</key>
-	<string>hapticprefs</string>
-</dict>
+	<dict>
+		<key>items</key>
+		<array>
+
+
+			<dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+				<key>label</key>
+				<string>Enable/Disable Options</string>
+			</dict>
+
+
+			<!--Switch Cell for Enable/Disable Single Tap-->
+			<dict>
+				<key>cell</key>
+				<string>PSSwitchCell</string>
+				<key>default</key>
+				<false/>
+				<key>defaults</key>
+				<string>com.aejester.hapticprefs</string>
+				<key>key</key>
+				<string>isSinglePressEnabled</string>
+				<key>label</key>
+				<string>Enable Single Tap</string>
+				<key>PostNotification</key>
+				<string>com.aejester.hapticprefs/ReloadPrefs</string>
+			</dict>
+
+
+			<!--Switch Cell for Enable/Disable Double Tap-->
+			<dict>
+				<key>cell</key>
+				<string>PSSwitchCell</string>
+				<key>default</key>
+				<false/>
+				<key>defaults</key>
+				<string>com.aejester.hapticprefs</string>
+				<key>key</key>
+				<string>isDoublePressEnabled</string>
+				<key>label</key>
+				<string>Enable Double Tap</string>
+				<key>PostNotification</key>
+				<string>com.aejester.hapticprefs/ReloadPrefs</string>
+			</dict>
+
+
+			<!--Switch Cell for Enable/Disable Triple Tap-->
+			<dict>
+				<key>cell</key>
+				<string>PSSwitchCell</string>
+				<key>default</key>
+				<false/>
+				<key>defaults</key>
+				<string>com.aejester.hapticprefs</string>
+				<key>key</key>
+				<string>isTriplePressEnabled</string>
+				<key>label</key>
+				<string>Enable Triple Tap</string>
+				<key>PostNotification</key>
+				<string>com.aejester.hapticprefs/ReloadPrefs</string>
+			</dict>
+
+
+			<!--Switch Cell for Enable/Disable Quad Tap-->
+			<dict>
+				<key>cell</key>
+				<string>PSSwitchCell</string>
+				<key>default</key>
+				<false/>
+				<key>defaults</key>
+				<string>com.aejester.hapticprefs</string>
+				<key>key</key>
+				<string>isQuadPressEnabled</string>
+				<key>label</key>
+				<string>Enable Double Tap</string>
+				<key>PostNotification</key>
+				<string>com.aejester.hapticprefs/ReloadPrefs</string>
+			</dict>
+
+
+
+			<!--Switch Cell for Enable/Disable Increase Volume-->
+			<dict>
+				<key>cell</key>
+				<string>PSSwitchCell</string>
+				<key>default</key>
+				<false/>
+				<key>defaults</key>
+				<string>com.aejester.hapticprefs</string>
+				<key>key</key>
+				<string>isIncreaseVolumeEnabled</string>
+				<key>label</key>
+				<string>Enable Increase Volume</string>
+				<key>PostNotification</key>
+				<string>com.aejester.hapticprefs/ReloadPrefs</string>
+			</dict>
+
+
+
+			<!--Switch Cell for Enable/Disable Decrease Volume-->
+			<dict>
+				<key>cell</key>
+				<string>PSSwitchCell</string>
+				<key>default</key>
+				<false/>
+				<key>defaults</key>
+				<string>com.aejester.hapticprefs</string>
+				<key>key</key>
+				<string>isDecreaseVolumeEnabled</string>
+				<key>label</key>
+				<string>Enable Decrease Volume</string>
+				<key>PostNotification</key>
+				<string>com.aejester.hapticprefs/ReloadPrefs</string>
+			</dict>
+
+
+		</array>
+		<key>title</key>
+		<string>hapticprefs</string>
+	</dict>
 </plist>
